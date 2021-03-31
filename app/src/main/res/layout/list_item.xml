@@ -7,7 +7,6 @@
     android:background="@drawable/my_border">
 
 
-
     <ImageView
         android:id="@+id/serviceIMG"
         android:layout_width="95dp"
@@ -21,12 +20,14 @@
 
     <TextView
         android:id="@+id/textTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="270dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
         android:text="Наименование услуги"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/serviceIMG"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.13" />
@@ -35,21 +36,20 @@
         android:id="@+id/OldCostText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toEndOf="@+id/serviceIMG"
         app:layout_constraintTop_toBottomOf="@+id/textTitle"
-        app:layout_constraintVertical_bias="0.111" />
+        app:layout_constraintVertical_bias="0.22000003" />
 
     <TextView
         android:id="@+id/newCostText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toEndOf="@+id/OldCostText"
         app:layout_constraintTop_toBottomOf="@+id/textTitle"
         app:layout_constraintVertical_bias="0.215" />
@@ -74,8 +74,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.493" />
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.22000003" />
 
     <TextView
         android:id="@+id/textView6"
@@ -84,10 +84,10 @@
         android:text="минут"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
+        app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toEndOf="@+id/timeText"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.49" />
+        app:layout_constraintTop_toBottomOf="@+id/textTitle"
+        app:layout_constraintVertical_bias="0.22000003" />
 
     <TextView
         android:id="@+id/discountText"
@@ -95,7 +95,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintHorizontal_bias="0.05"
         app:layout_constraintStart_toEndOf="@+id/serviceIMG"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 </androidx.constraintlayout.widget.ConstraintLayout>
