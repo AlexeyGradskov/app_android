@@ -1,22 +1,22 @@
 package com.example.school;
 
 public class Service {
+    private final int id;
     private final int duration;
-    private final int discount;
-    private final int mainImagePath;
+    private final float discount;
+    private final byte[] photo;
     private final String title;
-    private final String description;
-    private final double cost;
+    private final int cost;
 
-    public Service(int id, String title, double cost,
-                   int duration, String description,
-                   int discount, int mainImagePath) {
+    public Service(int id, String title, int cost,
+                   int duration,
+                   float discount, byte[] photo) {
+        this.id = id;
         this.title = title;
         this.cost = cost;
         this.duration = duration;
-        this.description = description;
         this.discount = discount;
-        this.mainImagePath = mainImagePath;
+        this.photo = photo;
     }
 
     public double getOldCost() {
@@ -27,20 +27,23 @@ public class Service {
         return duration;
     }
 
-    public int getDiscount() {
+    public float getDiscount() {
         return discount;
     }
 
-    public double getCost() {
+    public int getCost() {
         return cost;
     }
 
-    public int getMainImagePath() {
-        return mainImagePath;
+    public byte[] getPhoto() {
+        return photo;
     }
 
     public String getTitle() {
         return title;
     }
 
+    public int getId() {
+        return id;
+    }
 }
